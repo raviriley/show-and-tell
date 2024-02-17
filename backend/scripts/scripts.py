@@ -28,13 +28,15 @@ def lint() -> None:
     subprocess.run(f"mypy {targets}", shell=True, text=True)
 
     print("⚡️ Linting code...")
-    subprocess.run(f"ruff check {targets}", shell=True, text=True) 
+    subprocess.run(f"ruff check {targets}", shell=True, text=True)
 
     print("🎨 Checking code formatting with black...")
     subprocess.run(f"ruff format --check {targets}", shell=True, text=True)
 
     # print("🔒️  Scan for security issues with bandit...")
     # subprocess.run(f"bandit -r -q {project_folder}", shell=True, text=True)
+
+    print("✅ Linting complete!")
 
 
 def format_code() -> None:
@@ -57,3 +59,25 @@ def format_and_lint() -> None:
     lint()
 
 
+def test() -> None:
+    """Testing script."""
+    # parser = argparse.ArgumentParser(description='Say hi.')
+    # parser.add_argument('target', type=str, default="tests", help='the name of the target')
+    # args = parser.parse_args()
+
+    subprocess.run(f"pytest tests --cov={project_folder}", shell=True, text=True)
+
+
+def format_lint_test() -> None:
+    """Runs linting, formatting, and testing in one go."""
+    print(f"🎨 {TextStyle.UNDERLINE}Running formatters...{TextStyle.END}")
+    format_code()
+    print(f"🚨 {TextStyle.UNDERLINE}Running linters...{TextStyle.END}")
+    lint()
+    print(f"🧪 {TextStyle.UNDERLINE}Running tests...{TextStyle.END}")
+    test()
+
+
+def dev() -> None:
+    """Runs backend in dev mode"""
+    subprocess.run("python backend/app.py", shell=True, text=True)

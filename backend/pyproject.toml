@@ -11,6 +11,7 @@ hume = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.2.1"
+mypy = "^1.8.0"
 
 [tool.poetry.scripts]
 lint = "scripts.scripts:lint"
@@ -19,6 +20,14 @@ format = "scripts.scripts:format_code"
 f = "scripts.scripts:format_code"
 format-lint = "scripts.scripts:format_and_lint"
 fl = "scripts.scripts:format_and_lint"
+
+[tool.mypy]
+python_version = "3.10"
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+ignore_missing_imports = true
 
 [tool.ruff]
 line-length = 120
