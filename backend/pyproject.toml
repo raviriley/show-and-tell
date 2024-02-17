@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Ravi Riley <raviriley@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hume = "^0.4.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.1"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
