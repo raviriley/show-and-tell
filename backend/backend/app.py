@@ -99,7 +99,7 @@ def callOpenAI(words):
 
 # RECIEVING FROM ARDUINO
 # Replace '/dev/ttyUSB0' with your serial port and adjust baudrate
-ser = serial.Serial("/dev/cu.usbmodem2101", 9600)
+# ser = serial.Serial("/dev/cu.usbmodem2101", 9600)
 
 sameWordCounter = 0
 spokenText = []
@@ -204,6 +204,7 @@ def handle_disconnect():
 
 @socketio.on("image")
 def handleImage(json):
+    print("Received image")
     global streaming_active, reading
     storeImage(json)
     emotion = callHumeAPI()
@@ -226,3 +227,6 @@ def handleSignRequest(json):
         stopHandCapture()
         emit("words", words)
         words = []
+
+if __name__ == '__main__':
+    socketio.run(app)

@@ -18,6 +18,7 @@
 		BA10DE412B8249E800E532FF /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BA10DE402B8249E800E532FF /* StreamVideoSwiftUI */; };
 		BA10DE432B824A4B00E532FF /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE422B824A4B00E532FF /* AppViewModel.swift */; };
 		BA10DE452B824A7400E532FF /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE442B824A7400E532FF /* CameraFeedManager.swift */; };
+		BA10DE482B8264A000E532FF /* StreamSnapshotTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE472B8264A000E532FF /* StreamSnapshotTrigger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BA10DE3B2B8249C200E532FF /* CustomCallControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCallControlsView.swift; sourceTree = "<group>"; };
 		BA10DE422B824A4B00E532FF /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		BA10DE442B824A7400E532FF /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		BA10DE472B8264A000E532FF /* StreamSnapshotTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSnapshotTrigger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		BA10DE282B82494A00E532FF /* ShowAndTell */ = {
 			isa = PBXGroup;
 			children = (
+				BA10DE462B82649000E532FF /* Snapshots */,
 				BA10DE292B82494A00E532FF /* ShowAndTellApp.swift */,
 				BA10DE2B2B82494A00E532FF /* ContentView.swift */,
 				BA10DE2D2B82494B00E532FF /* Assets.xcassets */,
@@ -84,6 +87,14 @@
 				BA10DE302B82494B00E532FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA10DE462B82649000E532FF /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				BA10DE472B8264A000E532FF /* StreamSnapshotTrigger.swift */,
+			);
+			path = Snapshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				BA10DE432B824A4B00E532FF /* AppViewModel.swift in Sources */,
 				BA10DE382B82496700E532FF /* MainOverlayView.swift in Sources */,
 				BA10DE3C2B8249C200E532FF /* CustomCallControlsView.swift in Sources */,
+				BA10DE482B8264A000E532FF /* StreamSnapshotTrigger.swift in Sources */,
 				BA10DE2A2B82494A00E532FF /* ShowAndTellApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

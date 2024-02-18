@@ -5,14 +5,16 @@
 //  Created by Ravi Riley on 2/17/24.
 //
 
-import StreamVideoSwiftUI
 import SwiftUI
+import Combine
+import StreamVideo
+import StreamVideoSwiftUI
 
 
 class CustomViewFactory: ViewFactory {
+    @Injected(\.snapshotTrigger) var snapshotTrigger
 
     public func makeCallControlsView(viewModel: CallViewModel) -> some View {
-//        EmptyCallControlsView(viewModel: viewModel)
         CustomCallControlsView(viewModel: viewModel)
     }
     
@@ -21,6 +23,27 @@ class CustomViewFactory: ViewFactory {
     }
 
 }
+
+func uploadImage(base64EncodedString: String) {
+        let uploadData = ["image": base64EncodedString]
+        guard let url = URL(string: "https://02dc-2607-f6d0-ced-5b4-f52b-cc3-4158-7247.ngrok-free.app/upload") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONSerialization.data(withJSONObject: uploadData, options: [])
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error during HTTP request: \(error.localizedDescription)")
+                return
+            }
+            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                print("Image uploaded successfully")
+            } else {
+                print("Failed to upload image")
+            }
+        }.resume()
+    }
 
 struct EmptyCallControlsView: View {
     

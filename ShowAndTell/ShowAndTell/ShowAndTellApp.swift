@@ -13,6 +13,8 @@ import StreamVideoSwiftUI
 struct ShowAndTellApp: App {
     @ObservedObject var viewModel: CallViewModel
     @StateObject private var appViewModel = AppViewModel()
+    
+    @Injected(\.snapshotTrigger) var snapshotTrigger
 
     private var client: StreamVideo
     private let apiKey: String = "mmhfdzb5evj2" // The API key can be found in the Credentials section
@@ -36,13 +38,22 @@ struct ShowAndTellApp: App {
 
         self.viewModel = .init()
     }
+    
+    let cameraFeedManager = CameraFeedManager()
 
     var body: some Scene {
         WindowGroup {
             ZStack {
                 VStack {
                     if viewModel.call != nil {
-                        CallContainer(viewFactory: CustomViewFactory(), viewModel: viewModel)
+                        CallContainer(viewFactory: CustomViewFactory(), viewModel: viewModel).snapshot(trigger: snapshotTrigger) { snapshot in
+                            guard let imageData = snapshot.jpegData(compressionQuality: 0.5) else {
+                                print("Failed to convert snapshot to JPEG.")
+                                return
+                            }
+                            let base64ImageString = imageData.base64EncodedString()
+                            uploadImage(base64EncodedString: base64ImageString)
+                        }
                             .overlay(
                                 GeometryReader { geometry in
                                         VStack {
@@ -62,6 +73,7 @@ struct ShowAndTellApp: App {
                     }
                 }
                 .environmentObject(appViewModel)
+                .environmentObject(cameraFeedManager)
             }
         }
     }
