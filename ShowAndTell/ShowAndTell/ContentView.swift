@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Face2FaceASL
+//  ShowAndTell
 //
-//  Created by Ravi Riley on 2/17/24.
+//  Created by Ravi Riley on 2/18/24.
 //
 
 import SwiftUI
@@ -17,7 +17,6 @@ struct ContentView: View {
         }
         .padding()
     }
-    
 }
 
 #Preview {

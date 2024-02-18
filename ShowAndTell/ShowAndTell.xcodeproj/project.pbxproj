@@ -7,124 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA6FBAC52B81A69E00B7BAF7 /* Face2FaceASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FBAC42B81A69E00B7BAF7 /* Face2FaceASLApp.swift */; };
-		BA6FBAC72B81A69E00B7BAF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FBAC62B81A69E00B7BAF7 /* ContentView.swift */; };
-		BA6FBAC92B81A69F00B7BAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6FBAC82B81A69F00B7BAF7 /* Assets.xcassets */; };
-		BA6FBACC2B81A69F00B7BAF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6FBACB2B81A69F00B7BAF7 /* Preview Assets.xcassets */; };
-		BA6FBAD42B81A70B00B7BAF7 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = BA6FBAD32B81A70B00B7BAF7 /* StreamVideo */; };
-		BA6FBAD62B81A70B00B7BAF7 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BA6FBAD52B81A70B00B7BAF7 /* StreamVideoSwiftUI */; };
-		BA6FBADD2B81DA1D00B7BAF7 /* CustomViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FBADC2B81DA1D00B7BAF7 /* CustomViewFactory.swift */; };
-		BA6FBAE22B81EBCE00B7BAF7 /* CustomCallControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FBAE12B81EBCE00B7BAF7 /* CustomCallControlsView.swift */; };
+		BA10DE2A2B82494A00E532FF /* ShowAndTellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE292B82494A00E532FF /* ShowAndTellApp.swift */; };
+		BA10DE2C2B82494A00E532FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE2B2B82494A00E532FF /* ContentView.swift */; };
+		BA10DE2E2B82494B00E532FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA10DE2D2B82494B00E532FF /* Assets.xcassets */; };
+		BA10DE312B82494B00E532FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA10DE302B82494B00E532FF /* Preview Assets.xcassets */; };
+		BA10DE382B82496700E532FF /* MainOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE372B82496700E532FF /* MainOverlayView.swift */; };
+		BA10DE3A2B8249AA00E532FF /* CustomViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE392B8249AA00E532FF /* CustomViewFactory.swift */; };
+		BA10DE3C2B8249C200E532FF /* CustomCallControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE3B2B8249C200E532FF /* CustomCallControlsView.swift */; };
+		BA10DE3F2B8249E800E532FF /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = BA10DE3E2B8249E800E532FF /* StreamVideo */; };
+		BA10DE412B8249E800E532FF /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BA10DE402B8249E800E532FF /* StreamVideoSwiftUI */; };
+		BA10DE432B824A4B00E532FF /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE422B824A4B00E532FF /* AppViewModel.swift */; };
+		BA10DE452B824A7400E532FF /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE442B824A7400E532FF /* CameraFeedManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA6FBAC12B81A69E00B7BAF7 /* Face2FaceASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Face2FaceASL.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA6FBAC42B81A69E00B7BAF7 /* Face2FaceASLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face2FaceASLApp.swift; sourceTree = "<group>"; };
-		BA6FBAC62B81A69E00B7BAF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BA6FBAC82B81A69F00B7BAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA6FBACB2B81A69F00B7BAF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BA6FBADC2B81DA1D00B7BAF7 /* CustomViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewFactory.swift; sourceTree = "<group>"; };
-		BA6FBAE12B81EBCE00B7BAF7 /* CustomCallControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCallControlsView.swift; sourceTree = "<group>"; };
+		BA10DE262B82494A00E532FF /* ShowAndTell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowAndTell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA10DE292B82494A00E532FF /* ShowAndTellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAndTellApp.swift; sourceTree = "<group>"; };
+		BA10DE2B2B82494A00E532FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA10DE2D2B82494B00E532FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA10DE302B82494B00E532FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA10DE372B82496700E532FF /* MainOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOverlayView.swift; sourceTree = "<group>"; };
+		BA10DE392B8249AA00E532FF /* CustomViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewFactory.swift; sourceTree = "<group>"; };
+		BA10DE3B2B8249C200E532FF /* CustomCallControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCallControlsView.swift; sourceTree = "<group>"; };
+		BA10DE422B824A4B00E532FF /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		BA10DE442B824A7400E532FF /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BA6FBABE2B81A69E00B7BAF7 /* Frameworks */ = {
+		BA10DE232B82494A00E532FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6FBAD62B81A70B00B7BAF7 /* StreamVideoSwiftUI in Frameworks */,
-				BA6FBAD42B81A70B00B7BAF7 /* StreamVideo in Frameworks */,
+				BA10DE412B8249E800E532FF /* StreamVideoSwiftUI in Frameworks */,
+				BA10DE3F2B8249E800E532FF /* StreamVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA6FBAB82B81A69E00B7BAF7 = {
+		BA10DE1D2B82494A00E532FF = {
 			isa = PBXGroup;
 			children = (
-				BA6FBAC32B81A69E00B7BAF7 /* Face2FaceASL */,
-				BA6FBAC22B81A69E00B7BAF7 /* Products */,
+				BA10DE282B82494A00E532FF /* ShowAndTell */,
+				BA10DE272B82494A00E532FF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BA6FBAC22B81A69E00B7BAF7 /* Products */ = {
+		BA10DE272B82494A00E532FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA6FBAC12B81A69E00B7BAF7 /* Face2FaceASL.app */,
+				BA10DE262B82494A00E532FF /* ShowAndTell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA6FBAC32B81A69E00B7BAF7 /* Face2FaceASL */ = {
+		BA10DE282B82494A00E532FF /* ShowAndTell */ = {
 			isa = PBXGroup;
 			children = (
-				BA6FBADB2B81D9F800B7BAF7 /* CustomStreamUI */,
-				BA6FBAC42B81A69E00B7BAF7 /* Face2FaceASLApp.swift */,
-				BA6FBAC62B81A69E00B7BAF7 /* ContentView.swift */,
-				BA6FBAC82B81A69F00B7BAF7 /* Assets.xcassets */,
-				BA6FBACA2B81A69F00B7BAF7 /* Preview Content */,
+				BA10DE292B82494A00E532FF /* ShowAndTellApp.swift */,
+				BA10DE2B2B82494A00E532FF /* ContentView.swift */,
+				BA10DE2D2B82494B00E532FF /* Assets.xcassets */,
+				BA10DE2F2B82494B00E532FF /* Preview Content */,
+				BA10DE372B82496700E532FF /* MainOverlayView.swift */,
+				BA10DE392B8249AA00E532FF /* CustomViewFactory.swift */,
+				BA10DE3B2B8249C200E532FF /* CustomCallControlsView.swift */,
+				BA10DE422B824A4B00E532FF /* AppViewModel.swift */,
+				BA10DE442B824A7400E532FF /* CameraFeedManager.swift */,
 			);
-			path = Face2FaceASL;
+			path = ShowAndTell;
 			sourceTree = "<group>";
 		};
-		BA6FBACA2B81A69F00B7BAF7 /* Preview Content */ = {
+		BA10DE2F2B82494B00E532FF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				BA6FBACB2B81A69F00B7BAF7 /* Preview Assets.xcassets */,
+				BA10DE302B82494B00E532FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		BA6FBADB2B81D9F800B7BAF7 /* CustomStreamUI */ = {
-			isa = PBXGroup;
-			children = (
-				BA6FBADC2B81DA1D00B7BAF7 /* CustomViewFactory.swift */,
-				BA6FBAE12B81EBCE00B7BAF7 /* CustomCallControlsView.swift */,
-			);
-			path = CustomStreamUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BA6FBAC02B81A69E00B7BAF7 /* Face2FaceASL */ = {
+		BA10DE252B82494A00E532FF /* ShowAndTell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA6FBACF2B81A69F00B7BAF7 /* Build configuration list for PBXNativeTarget "Face2FaceASL" */;
+			buildConfigurationList = BA10DE342B82494B00E532FF /* Build configuration list for PBXNativeTarget "ShowAndTell" */;
 			buildPhases = (
-				BA6FBABD2B81A69E00B7BAF7 /* Sources */,
-				BA6FBABE2B81A69E00B7BAF7 /* Frameworks */,
-				BA6FBABF2B81A69E00B7BAF7 /* Resources */,
+				BA10DE222B82494A00E532FF /* Sources */,
+				BA10DE232B82494A00E532FF /* Frameworks */,
+				BA10DE242B82494A00E532FF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Face2FaceASL;
+			name = ShowAndTell;
 			packageProductDependencies = (
-				BA6FBAD32B81A70B00B7BAF7 /* StreamVideo */,
-				BA6FBAD52B81A70B00B7BAF7 /* StreamVideoSwiftUI */,
+				BA10DE3E2B8249E800E532FF /* StreamVideo */,
+				BA10DE402B8249E800E532FF /* StreamVideoSwiftUI */,
 			);
-			productName = Face2FaceASL;
-			productReference = BA6FBAC12B81A69E00B7BAF7 /* Face2FaceASL.app */;
+			productName = ShowAndTell;
+			productReference = BA10DE262B82494A00E532FF /* ShowAndTell.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BA6FBAB92B81A69E00B7BAF7 /* Project object */ = {
+		BA10DE1E2B82494A00E532FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					BA6FBAC02B81A69E00B7BAF7 = {
+					BA10DE252B82494A00E532FF = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = BA6FBABC2B81A69E00B7BAF7 /* Build configuration list for PBXProject "Face2FaceASL" */;
+			buildConfigurationList = BA10DE212B82494A00E532FF /* Build configuration list for PBXProject "ShowAndTell" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,47 +133,50 @@
 				en,
 				Base,
 			);
-			mainGroup = BA6FBAB82B81A69E00B7BAF7;
+			mainGroup = BA10DE1D2B82494A00E532FF;
 			packageReferences = (
-				BA6FBAD22B81A70B00B7BAF7 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+				BA10DE3D2B8249E800E532FF /* XCRemoteSwiftPackageReference "stream-video-swift" */,
 			);
-			productRefGroup = BA6FBAC22B81A69E00B7BAF7 /* Products */;
+			productRefGroup = BA10DE272B82494A00E532FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BA6FBAC02B81A69E00B7BAF7 /* Face2FaceASL */,
+				BA10DE252B82494A00E532FF /* ShowAndTell */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BA6FBABF2B81A69E00B7BAF7 /* Resources */ = {
+		BA10DE242B82494A00E532FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6FBACC2B81A69F00B7BAF7 /* Preview Assets.xcassets in Resources */,
-				BA6FBAC92B81A69F00B7BAF7 /* Assets.xcassets in Resources */,
+				BA10DE312B82494B00E532FF /* Preview Assets.xcassets in Resources */,
+				BA10DE2E2B82494B00E532FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BA6FBABD2B81A69E00B7BAF7 /* Sources */ = {
+		BA10DE222B82494A00E532FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6FBAC72B81A69E00B7BAF7 /* ContentView.swift in Sources */,
-				BA6FBAE22B81EBCE00B7BAF7 /* CustomCallControlsView.swift in Sources */,
-				BA6FBAC52B81A69E00B7BAF7 /* Face2FaceASLApp.swift in Sources */,
-				BA6FBADD2B81DA1D00B7BAF7 /* CustomViewFactory.swift in Sources */,
+				BA10DE3A2B8249AA00E532FF /* CustomViewFactory.swift in Sources */,
+				BA10DE2C2B82494A00E532FF /* ContentView.swift in Sources */,
+				BA10DE452B824A7400E532FF /* CameraFeedManager.swift in Sources */,
+				BA10DE432B824A4B00E532FF /* AppViewModel.swift in Sources */,
+				BA10DE382B82496700E532FF /* MainOverlayView.swift in Sources */,
+				BA10DE3C2B8249C200E532FF /* CustomCallControlsView.swift in Sources */,
+				BA10DE2A2B82494A00E532FF /* ShowAndTellApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BA6FBACD2B81A69F00B7BAF7 /* Debug */ = {
+		BA10DE322B82494B00E532FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +239,7 @@
 			};
 			name = Debug;
 		};
-		BA6FBACE2B81A69F00B7BAF7 /* Release */ = {
+		BA10DE332B82494B00E532FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,19 +295,19 @@
 			};
 			name = Release;
 		};
-		BA6FBAD02B81A69F00B7BAF7 /* Debug */ = {
+		BA10DE352B82494B00E532FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Face2FaceASL/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ShowAndTell/Preview Content\"";
 				DEVELOPMENT_TEAM = NJ2SQLUU4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(MARKETING_VERSION)";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = raviriley.Face2FaceASL;
+				PRODUCT_BUNDLE_IDENTIFIER = raviriley.ShowAndTell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,19 +326,19 @@
 			};
 			name = Debug;
 		};
-		BA6FBAD12B81A69F00B7BAF7 /* Release */ = {
+		BA10DE362B82494B00E532FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Face2FaceASL/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ShowAndTell/Preview Content\"";
 				DEVELOPMENT_TEAM = NJ2SQLUU4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(MARKETING_VERSION)";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(MARKETING_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -345,7 +349,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = raviriley.Face2FaceASL;
+				PRODUCT_BUNDLE_IDENTIFIER = raviriley.ShowAndTell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,20 +360,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BA6FBABC2B81A69E00B7BAF7 /* Build configuration list for PBXProject "Face2FaceASL" */ = {
+		BA10DE212B82494A00E532FF /* Build configuration list for PBXProject "ShowAndTell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA6FBACD2B81A69F00B7BAF7 /* Debug */,
-				BA6FBACE2B81A69F00B7BAF7 /* Release */,
+				BA10DE322B82494B00E532FF /* Debug */,
+				BA10DE332B82494B00E532FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA6FBACF2B81A69F00B7BAF7 /* Build configuration list for PBXNativeTarget "Face2FaceASL" */ = {
+		BA10DE342B82494B00E532FF /* Build configuration list for PBXNativeTarget "ShowAndTell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA6FBAD02B81A69F00B7BAF7 /* Debug */,
-				BA6FBAD12B81A69F00B7BAF7 /* Release */,
+				BA10DE352B82494B00E532FF /* Debug */,
+				BA10DE362B82494B00E532FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -377,7 +381,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BA6FBAD22B81A70B00B7BAF7 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+		BA10DE3D2B8249E800E532FF /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/GetStream/stream-video-swift.git";
 			requirement = {
@@ -388,17 +392,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BA6FBAD32B81A70B00B7BAF7 /* StreamVideo */ = {
+		BA10DE3E2B8249E800E532FF /* StreamVideo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BA6FBAD22B81A70B00B7BAF7 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			package = BA10DE3D2B8249E800E532FF /* XCRemoteSwiftPackageReference "stream-video-swift" */;
 			productName = StreamVideo;
 		};
-		BA6FBAD52B81A70B00B7BAF7 /* StreamVideoSwiftUI */ = {
+		BA10DE402B8249E800E532FF /* StreamVideoSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BA6FBAD22B81A70B00B7BAF7 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			package = BA10DE3D2B8249E800E532FF /* XCRemoteSwiftPackageReference "stream-video-swift" */;
 			productName = StreamVideoSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = BA6FBAB92B81A69E00B7BAF7 /* Project object */;
+	rootObject = BA10DE1E2B82494A00E532FF /* Project object */;
 }
