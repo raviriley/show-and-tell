@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA6FBAC52B81A69E00B7BAF7 /* Face2FaceASLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FBAC42B81A69E00B7BAF7 /* Face2FaceASLApp.swift */; };
+		BA6FBAC72B81A69E00B7BAF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FBAC62B81A69E00B7BAF7 /* ContentView.swift */; };
+		BA6FBAC92B81A69F00B7BAF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6FBAC82B81A69F00B7BAF7 /* Assets.xcassets */; };
+		BA6FBACC2B81A69F00B7BAF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6FBACB2B81A69F00B7BAF7 /* Preview Assets.xcassets */; };
+		BA6FBAD42B81A70B00B7BAF7 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = BA6FBAD32B81A70B00B7BAF7 /* StreamVideo */; };
+		BA6FBAD62B81A70B00B7BAF7 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BA6FBAD52B81A70B00B7BAF7 /* StreamVideoSwiftUI */; };
+		BA6FBADD2B81DA1D00B7BAF7 /* CustomViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FBADC2B81DA1D00B7BAF7 /* CustomViewFactory.swift */; };
+		BA6FBAE22B81EBCE00B7BAF7 /* CustomCallControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FBAE12B81EBCE00B7BAF7 /* CustomCallControlsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA6FBAC12B81A69E00B7BAF7 /* Face2FaceASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Face2FaceASL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6FBAC42B81A69E00B7BAF7 /* Face2FaceASLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face2FaceASLApp.swift; sourceTree = "<group>"; };
+		BA6FBAC62B81A69E00B7BAF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA6FBAC82B81A69F00B7BAF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA6FBACB2B81A69F00B7BAF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA6FBADC2B81DA1D00B7BAF7 /* CustomViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewFactory.swift; sourceTree = "<group>"; };
+		BA6FBAE12B81EBCE00B7BAF7 /* CustomCallControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCallControlsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA6FBABE2B81A69E00B7BAF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6FBAD62B81A70B00B7BAF7 /* StreamVideoSwiftUI in Frameworks */,
+				BA6FBAD42B81A70B00B7BAF7 /* StreamVideo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA6FBAB82B81A69E00B7BAF7 = {
+			isa = PBXGroup;
+			children = (
+				BA6FBAC32B81A69E00B7BAF7 /* Face2FaceASL */,
+				BA6FBAC22B81A69E00B7BAF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA6FBAC22B81A69E00B7BAF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA6FBAC12B81A69E00B7BAF7 /* Face2FaceASL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA6FBAC32B81A69E00B7BAF7 /* Face2FaceASL */ = {
+			isa = PBXGroup;
+			children = (
+				BA6FBADB2B81D9F800B7BAF7 /* CustomStreamUI */,
+				BA6FBAC42B81A69E00B7BAF7 /* Face2FaceASLApp.swift */,
+				BA6FBAC62B81A69E00B7BAF7 /* ContentView.swift */,
+				BA6FBAC82B81A69F00B7BAF7 /* Assets.xcassets */,
+				BA6FBACA2B81A69F00B7BAF7 /* Preview Content */,
+			);
+			path = Face2FaceASL;
+			sourceTree = "<group>";
+		};
+		BA6FBACA2B81A69F00B7BAF7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BA6FBACB2B81A69F00B7BAF7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA6FBADB2B81D9F800B7BAF7 /* CustomStreamUI */ = {
+			isa = PBXGroup;
+			children = (
+				BA6FBADC2B81DA1D00B7BAF7 /* CustomViewFactory.swift */,
+				BA6FBAE12B81EBCE00B7BAF7 /* CustomCallControlsView.swift */,
+			);
+			path = CustomStreamUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA6FBAC02B81A69E00B7BAF7 /* Face2FaceASL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6FBACF2B81A69F00B7BAF7 /* Build configuration list for PBXNativeTarget "Face2FaceASL" */;
+			buildPhases = (
+				BA6FBABD2B81A69E00B7BAF7 /* Sources */,
+				BA6FBABE2B81A69E00B7BAF7 /* Frameworks */,
+				BA6FBABF2B81A69E00B7BAF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Face2FaceASL;
+			packageProductDependencies = (
+				BA6FBAD32B81A70B00B7BAF7 /* StreamVideo */,
+				BA6FBAD52B81A70B00B7BAF7 /* StreamVideoSwiftUI */,
+			);
+			productName = Face2FaceASL;
+			productReference = BA6FBAC12B81A69E00B7BAF7 /* Face2FaceASL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA6FBAB92B81A69E00B7BAF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					BA6FBAC02B81A69E00B7BAF7 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = BA6FBABC2B81A69E00B7BAF7 /* Build configuration list for PBXProject "Face2FaceASL" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA6FBAB82B81A69E00B7BAF7;
+			packageReferences = (
+				BA6FBAD22B81A70B00B7BAF7 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
+			productRefGroup = BA6FBAC22B81A69E00B7BAF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA6FBAC02B81A69E00B7BAF7 /* Face2FaceASL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA6FBABF2B81A69E00B7BAF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6FBACC2B81A69F00B7BAF7 /* Preview Assets.xcassets in Resources */,
+				BA6FBAC92B81A69F00B7BAF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA6FBABD2B81A69E00B7BAF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6FBAC72B81A69E00B7BAF7 /* ContentView.swift in Sources */,
+				BA6FBAE22B81EBCE00B7BAF7 /* CustomCallControlsView.swift in Sources */,
+				BA6FBAC52B81A69E00B7BAF7 /* Face2FaceASLApp.swift in Sources */,
+				BA6FBADD2B81DA1D00B7BAF7 /* CustomViewFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA6FBACD2B81A69F00B7BAF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA6FBACE2B81A69F00B7BAF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA6FBAD02B81A69F00B7BAF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Face2FaceASL/Preview Content\"";
+				DEVELOPMENT_TEAM = NJ2SQLUU4U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raviriley.Face2FaceASL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA6FBAD12B81A69F00B7BAF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Face2FaceASL/Preview Content\"";
+				DEVELOPMENT_TEAM = NJ2SQLUU4U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = raviriley.Face2FaceASL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA6FBABC2B81A69E00B7BAF7 /* Build configuration list for PBXProject "Face2FaceASL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6FBACD2B81A69F00B7BAF7 /* Debug */,
+				BA6FBACE2B81A69F00B7BAF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6FBACF2B81A69F00B7BAF7 /* Build configuration list for PBXNativeTarget "Face2FaceASL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6FBAD02B81A69F00B7BAF7 /* Debug */,
+				BA6FBAD12B81A69F00B7BAF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA6FBAD22B81A70B00B7BAF7 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA6FBAD32B81A70B00B7BAF7 /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA6FBAD22B81A70B00B7BAF7 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		BA6FBAD52B81A70B00B7BAF7 /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA6FBAD22B81A70B00B7BAF7 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BA6FBAB92B81A69E00B7BAF7 /* Project object */;
+}
