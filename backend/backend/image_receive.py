@@ -18,6 +18,9 @@ from PIL import Image
 app = Flask(__name__)
 
 
+# IMAGES
+
+
 @app.route("/upload", methods=["POST"])
 def upload_image():
     # Parse the JSON data
@@ -75,14 +78,7 @@ def upload_image():
     return jsonify({"message": f"Image uploaded successfully - top emotion {top_emotion}", "emotion": top_emotion}), 200
 
 
-if __name__ == "__main__":
-    app.run(debug=True, port=5000)
-
-
-# import pyaudio
-
-# Flask App
-app = Flask(__name__)
+# SIGN LANGUAGE
 
 # Dataset of sign language readings
 # sign_language_dataset = {'Hello': [4000, 4000, 4000, 4000, 4000, 4000],
@@ -313,4 +309,4 @@ def checkConnection():
 if __name__ == "__main__":
     thread = threading.Thread(target=startHandCapture)
     thread.start()
-    app.run(debug=True, host="0.0.0.0", port=6000)
+    app.run(debug=True, port=5000)
