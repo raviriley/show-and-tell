@@ -1,0 +1,45 @@
+//
+// Copyright © 2020 Stream.io Inc. All rights reserved.
+//
+
+"call.participants.title" = "Participants";
+"call.participants.invite" = "Invite";
+"call.participants.muteme" = "Mute me";
+"call.participants.unmuteme" = "Unmute me";
+"call.participants.add" = "Add participants";
+"call.participants.search" = "Search...";
+"call.participants.cancel-search" = "Cancel";
+"call.participants.on-platform" = "On the platform";
+"call.participants.blocked" = "Blocked users";
+
+"call.incoming.title" = "Incoming call";
+"call.outgoing.title" = "Calling";
+"call.joining.title" = "Joining";
+
+"call.current.reconnecting" = "Trying to reconnect to the call";
+"call.current.recording" = "Recording";
+"call.current.layout-grid" = "Grid";
+"call.current.layout-spotlight" = "Spotlight";
+"call.current.layout-full-screen" = "Full Screen";
+"call.current.layout-view" = "View";
+"call.current.pin-user" = "Pin user";
+"call.current.unpin-user" = "Unpin user";
+"call.current.pin-for-everyone" = "Pin for everyone";
+"call.current.unpin-for-everyone" = "Unpin for everyone";
+"call.current.sharing" = "You are sharing your screen";
+"call.current.stop-sharing" = "Stop sharing";
+
+"waiting-room.title" = "Before Joining";
+"waiting-room.subtitle" = "Setup your audio and video";
+"waiting-room.join" = "Join Call";
+"waiting-room.description" = "You are about to join a call.";
+"waiting-room.connection-issues" = "It seems you are having issues with your internet connection.";
+"waiting-room.mic.not-working" = "Your microphone doesn't seem to be working. Make sure you have all permissions accepted.";
+
+"alert.error.title" = "Something went wrong.";
+"alert.error.message" = "The operation couldn't be completed.";
+"alert.actions.ok" = "Ok";
+
+"call.livestream.not-started" = "Livestream is not started. Please come back later.";
+"call.livestream.live" = "Live";
+"call.livestream.error" = "Error joining the livestream. Please try again later.";

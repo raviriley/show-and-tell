@@ -1,0 +1,31 @@
+name: 'Bootstrap'
+description: 'Run bootstrap.sh'
+runs:
+  using: "composite"
+  steps:
+    - run: echo "IMAGE=${ImageOS}-${ImageVersion}" >> $GITHUB_ENV
+      shell: bash
+    - run: echo "$HOME/.mint/bin" >> $GITHUB_PATH
+      shell: bash
+    - name: Cache Mint
+      uses: actions/cache@v3
+      id: mint-cache
+      with:
+        path: ~/.mint
+        key: ${{ env.IMAGE }}-mint-${{ hashFiles('**/Mintfile') }}
+        restore-keys: ${{ env.IMAGE }}-mint-
+    - name: Cache brew
+      uses: actions/cache@v3
+      id: brew-cache
+      with:
+        path: |
+          ~/Library/Caches/Homebrew/mint*
+          ~/Library/Caches/Homebrew/vale*
+          ~/Library/Caches/Homebrew/xcparse*
+          ~/Library/Caches/Homebrew/sonar-scanner*
+        key: ${{ env.IMAGE }}-brew-${{ hashFiles('**/Brewfile.lock.json') }}
+        restore-keys: ${{ env.IMAGE }}-brew-
+    - uses: ./.github/actions/ruby-cache
+    - uses: ./.github/actions/xcode-cache
+    - run: ./Scripts/bootstrap.sh
+      shell: bash

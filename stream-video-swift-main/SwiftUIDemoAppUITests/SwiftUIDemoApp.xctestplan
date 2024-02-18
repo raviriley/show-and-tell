@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "3227EC6C-417B-465C-A70D-02897501100D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "STREAM_VIDEO_SECRET",
+        "value" : "$(STREAM_VIDEO_SECRET)"
+      }
+    ],
+    "preferredScreenCaptureFormat" : "screenshot",
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:StreamVideo.xcodeproj",
+      "identifier" : "842D8BC22865B31B00801910",
+      "name" : "DemoApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:StreamVideo.xcodeproj",
+        "identifier" : "82392D502993C9E100941435",
+        "name" : "SwiftUIDemoAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

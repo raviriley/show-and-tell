@@ -1,0 +1,107 @@
+---
+title: Joining & Creating Calls
+description: An overview of how to create calls and join them
+---
+
+### Creating a call
+
+You create a call by specifying a "call type" and a call id.
+
+```swift
+let call = streamVideo.call(callType: "default", callId: "123")
+let result = try await call.create()
+```
+
+The **call type** controls which features are enabled, and sets up permissions.
+
+For the call id there are a few things to note:
+
+- You can reuse the same call multiple times.
+- If you have a unique id for the call we recommend passing that as the id.
+- If you don't have a unique id you can leave it empty and we'll generate one for you.
+
+As an example, if you're building a telemedicine app calls will be connected to an appointment. Using your own appointment id as the **call id** makes it easy to find the call later.
+
+### Joining a call
+
+Joining a call sets up the realtime communication for audio and video.
+
+```swift
+let call = streamVideo.call(callType: "default", callId: "123")
+let result = try await call.join()
+```
+
+### Call CRUD
+
+Basic CRUD operations are available on the call object
+
+```swift
+// create
+let call = streamVideo.call(callType: "default", callId: "123")
+let result = try await call.create()
+
+// update
+let custom: [String: RawJSON] = ["secret": .string("secret")]
+let updateResult = try await call.update(custom: custom)
+
+// get
+let getResult = try await call.get()
+```
+
+### Call Create Options
+
+Here's a more complete example that shows how to create a call with members and custom data that starts tomorrow and is limited to our team:
+
+```swift
+let members = ["thierry", "tommaso"]
+let call = streamVideo.call(callType: "default", callId: UUID().uuidString)
+
+let result = try await call.create(
+    memberIds: members, 
+    custom: ["color": .string("red")], 
+    startsAt: Calendar.current.date(byAdding: .day, value: 1, to: Date()),
+    team: "stream",
+    ring: true,
+    notify: false
+)
+```
+
+Members are permanently associated with a call. It allows you to:
+
+- Restrict the ability to join a call only to members
+- Send a push notification to members when the call starts
+
+The following options are supported when creating a call:
+
+| Option | Description | Default |
+| ------ | ----------- | ------- |
+| `memberIds` | A list of users ids to add as members to this call. | `nil` |
+| `members` | A list of members to add to this call. You can specify the role and custom data on these members. | `nil` |
+| `custom` | Any custom data you want to store. | `nil` |
+| `startsAt` | When the call will start. Used for calls scheduled in the future, livestreams, audio rooms etc. | `nil` |
+| `team` | Restrict the access to this call to a specific team. | `nil` |
+| `ring` | If you want the call to ring for each member. | `false` |
+| `notify` | If you want the call to nofiy each member by sending push notification. | `false` |
+
+### Querying Members
+
+You can query the members of the call. This is helpful if you have thousands of members in a call and want to paginate.
+
+```swift
+let filters: [String: RawJSON] = ["user_id": .string("jaewoong")]
+let response = try await call.queryMembers(
+    filters: filters,
+    sort: [SortParamRequest.descending("created_at")],
+    limit: 5
+)
+```
+
+You can filter the member list on these fields, and sort on the selected fields. Note that you can also query on custom data for the member or the user.
+
+| Option | Description | Sorting Supported |
+| ------ | ----------- | ------- |
+| `user_id` | The user's id. | Yes |
+| `role` | The member's role. | No |
+| `custom` | The custom data on the member. | No |
+| `created_at` | When the member was created. | Yes |
+| `updated_at` | When the member was last updated. | No |

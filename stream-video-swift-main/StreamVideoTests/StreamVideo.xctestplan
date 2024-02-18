@@ -1,0 +1,40 @@
+{
+  "configurations" : [
+    {
+      "id" : "52D2F0B8-32A4-4C72-A8CE-D2AE40A4C18F",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "defaultTestExecutionTimeAllowance" : 100,
+    "environmentVariableEntries" : [
+      {
+        "key" : "STREAM_VIDEO_SECRET",
+        "value" : "$(STREAM_VIDEO_SECRET)"
+      }
+    ],
+    "maximumTestExecutionTimeAllowance" : 100,
+    "maximumTestRepetitions" : 3,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:StreamVideo.xcodeproj",
+      "identifier" : "84F737F3287C13AD00A363F4",
+      "name" : "StreamVideoTests"
+    },
+    "testRepetitionMode" : "retryOnFailure",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:StreamVideo.xcodeproj",
+        "identifier" : "84F737F3287C13AD00A363F4",
+        "name" : "StreamVideoTests"
+      }
+    }
+  ],
+  "version" : 1
+}
