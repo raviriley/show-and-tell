@@ -43,7 +43,19 @@ func uploadImage(base64EncodedString: String) {
                 print("Failed to upload image")
             }
         }.resume()
+}
+
+func extractTopEmotion(from response: [String: Any]) -> String? {
+    guard let emotionData = response["emotion"] as? [String: Any], // Extract the 'emotion' dictionary
+          let topEmotion = emotionData["top emotion"] as? [String: Any], // Extract the 'top emotion' dictionary
+          let emotionName = topEmotion["name"] as? String // Extract the 'name' of the emotion
+    else {
+        print("Failed to extract top emotion from response.")
+        return nil
     }
+    
+    return emotionName
+}
 
 struct EmptyCallControlsView: View {
     

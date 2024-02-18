@@ -52,7 +52,9 @@ struct ShowAndTellApp: App {
                                 return
                             }
                             let base64ImageString = imageData.base64EncodedString()
-                            uploadImage(base64EncodedString: base64ImageString)
+                            let response = uploadImage(base64EncodedString: base64ImageString)
+                            print(response)
+
                         }
                             .overlay(
                                 GeometryReader { geometry in
