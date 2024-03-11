@@ -39,7 +39,7 @@ struct ShowAndTellApp: App {
         self.viewModel = .init()
     }
     
-    let cameraFeedManager = CameraFeedManager()
+//    let cameraFeedManager = CameraFeedManager()
 
     var body: some Scene {
         WindowGroup {
@@ -53,7 +53,7 @@ struct ShowAndTellApp: App {
                             }
                             let base64ImageString = imageData.base64EncodedString()
                             let response = uploadImage(base64EncodedString: base64ImageString)
-                            print(response)
+                            print("response: ", response)
 
                         }
                             .overlay(
@@ -75,7 +75,7 @@ struct ShowAndTellApp: App {
                     }
                 }
                 .environmentObject(appViewModel)
-                .environmentObject(cameraFeedManager)
+//                .environmentObject(cameraFeedManager)
             }
         }
     }

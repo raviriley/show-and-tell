@@ -15,7 +15,7 @@ struct MainOverlayView: View {
     
     var body: some View {
         if isVisible {
-            Text("Overlay Text Here for ASL Translation")
+            Text("Emotion: 😄 Happy!")
                 .padding()
                 .background(Color.white.opacity(0.90))
                 .foregroundColor(.black)

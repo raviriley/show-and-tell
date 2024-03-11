@@ -19,7 +19,7 @@ class CustomViewFactory: ViewFactory {
     }
     
     public func makeCallTopView(viewModel: CallViewModel) -> some View {
-        EmptyCallTopView(viewModel: viewModel)
+        CustomCallTopView(viewModel: viewModel)
     }
 
 }
@@ -39,6 +39,7 @@ func uploadImage(base64EncodedString: String) {
             }
             if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
                 print("Image uploaded successfully")
+//                print(data)
             } else {
                 print("Failed to upload image")
             }
@@ -46,16 +47,16 @@ func uploadImage(base64EncodedString: String) {
 }
 
 func extractTopEmotion(from response: [String: Any]) -> String? {
-    guard let emotionData = response["emotion"] as? [String: Any], // Extract the 'emotion' dictionary
-          let topEmotion = emotionData["top emotion"] as? [String: Any], // Extract the 'top emotion' dictionary
-          let emotionName = topEmotion["name"] as? String // Extract the 'name' of the emotion
+    guard let emotionData = response["emotion"] as? [String: Any], // Directly access the 'emotion' dictionary
+          let emotionName = emotionData["name"] as? String // Extract the 'name' of the emotion
     else {
         print("Failed to extract top emotion from response.")
         return nil
     }
     
     return emotionName
-}
+}q
+
 
 struct EmptyCallControlsView: View {
     
@@ -67,18 +68,19 @@ struct EmptyCallControlsView: View {
     
 }
 
-struct EmptyCallTopView: View {
-    
+struct CustomCallTopView: View {
     @ObservedObject var viewModel: CallViewModel
-    
-    var body: some View {
-        Text("Overlay Text Here for ASL Translation")
-            .padding()
-//            .background(Color.black.opacity(0))
-            .foregroundColor(.white)
-            .cornerRadius(10)
-            .padding()
-//        EmptyView()
-    }
-    
+        @StateObject private var languageViewModel = LanguageViewModel()
+
+        var body: some View {
+            Text(languageViewModel.responseText)
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(10)
+                .padding()
+                .onAppear {
+                    languageViewModel.fetchTranslation()
+                }
+        }
 }

@@ -228,5 +228,6 @@ def handleSignRequest(json):
         emit("words", words)
         words = []
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     socketio.run(app)

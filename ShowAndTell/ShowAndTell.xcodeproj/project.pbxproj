@@ -19,6 +19,8 @@
 		BA10DE432B824A4B00E532FF /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE422B824A4B00E532FF /* AppViewModel.swift */; };
 		BA10DE452B824A7400E532FF /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE442B824A7400E532FF /* CameraFeedManager.swift */; };
 		BA10DE482B8264A000E532FF /* StreamSnapshotTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE472B8264A000E532FF /* StreamSnapshotTrigger.swift */; };
+		BA10DE4D2B827B4B00E532FF /* ASLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE4C2B827B4B00E532FF /* ASLViewModel.swift */; };
+		BA10DE4F2B82A9E800E532FF /* EmotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA10DE4E2B82A9E800E532FF /* EmotionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		BA10DE422B824A4B00E532FF /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		BA10DE442B824A7400E532FF /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
 		BA10DE472B8264A000E532FF /* StreamSnapshotTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSnapshotTrigger.swift; sourceTree = "<group>"; };
+		BA10DE4C2B827B4B00E532FF /* ASLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLViewModel.swift; sourceTree = "<group>"; };
+		BA10DE4E2B82A9E800E532FF /* EmotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				BA10DE3B2B8249C200E532FF /* CustomCallControlsView.swift */,
 				BA10DE422B824A4B00E532FF /* AppViewModel.swift */,
 				BA10DE442B824A7400E532FF /* CameraFeedManager.swift */,
+				BA10DE4C2B827B4B00E532FF /* ASLViewModel.swift */,
+				BA10DE4E2B82A9E800E532FF /* EmotionViewModel.swift */,
 			);
 			path = ShowAndTell;
 			sourceTree = "<group>";
@@ -174,10 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA10DE4F2B82A9E800E532FF /* EmotionViewModel.swift in Sources */,
 				BA10DE3A2B8249AA00E532FF /* CustomViewFactory.swift in Sources */,
 				BA10DE2C2B82494A00E532FF /* ContentView.swift in Sources */,
 				BA10DE452B824A7400E532FF /* CameraFeedManager.swift in Sources */,
 				BA10DE432B824A4B00E532FF /* AppViewModel.swift in Sources */,
+				BA10DE4D2B827B4B00E532FF /* ASLViewModel.swift in Sources */,
 				BA10DE382B82496700E532FF /* MainOverlayView.swift in Sources */,
 				BA10DE3C2B8249C200E532FF /* CustomCallControlsView.swift in Sources */,
 				BA10DE482B8264A000E532FF /* StreamSnapshotTrigger.swift in Sources */,

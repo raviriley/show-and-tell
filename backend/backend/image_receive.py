@@ -15,6 +15,18 @@ from numpy.linalg import norm
 from openai import OpenAI
 from PIL import Image
 
+class TextStyle:
+    PURPLE = "\033[95m"
+    CYAN = "\033[96m"
+    DARKCYAN = "\033[36m"
+    BLUE = "\033[94m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    RED = "\033[91m"
+    BOLD = "\033[1m"
+    UNDERLINE = "\033[4m"
+    END = "\033[0m"
+
 app = Flask(__name__)
 
 
@@ -24,7 +36,7 @@ app = Flask(__name__)
 @app.route("/upload", methods=["POST"])
 def upload_image():
     # Parse the JSON data
-    print("Hello world!", file=sys.stderr)
+    print("Processing!", file=sys.stderr)
     data = request.get_json()
 
     # Extract the base64 image data
@@ -72,7 +84,7 @@ def upload_image():
     sorted_audio_emotions = sorted(emotions, key=lambda x: x["score"], reverse=True)
     top_emotion = sorted_audio_emotions[0]
 
-    print("top emotion: ", top_emotion)
+    print(f"\ntop emotion: {TextStyle.UNDERLINE}{top_emotion}{TextStyle.END}\n")
 
     # Assuming saving the image was successful
     return jsonify({"message": f"Image uploaded successfully - top emotion {top_emotion}", "emotion": top_emotion}), 200

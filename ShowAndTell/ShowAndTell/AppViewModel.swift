@@ -9,4 +9,10 @@ import SwiftUI
 
 class AppViewModel: ObservableObject {
     @Published var isOverlayVisible: Bool = false
+    @Published var EmotionResponse: EmotionResponse?
+}
+
+struct EmotionResponse: Codable {
+    let name: String
+    let score: Float
 }
